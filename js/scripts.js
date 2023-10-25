@@ -18,13 +18,19 @@ let pokemonRepository = (function () {
         }
     ];
 
+//     Gets the pokemonList
+
     function getAll() {
         return pokemonList;
     }
 
+//     Adds a pokemon into pokemonList
+
     function add(pokemon) {
         pokemonList.push(pokemon);
     }
+
+//     The "addListItem" function creates li and button for Pokemon names also creates event on click button
     
     function addListItem(pokemon) {
         let pokemonList = document.querySelector('.pokemon-list');
@@ -50,6 +56,7 @@ let pokemonRepository = (function () {
         console.log(pokemon);
     }
 
+//     allows you to access functions outside the IIEF
 
     return {
         getAll: getAll,
