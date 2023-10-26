@@ -56,7 +56,7 @@ let pokemonRepository = (function () {
         console.log(pokemon);
     }
 
-//     allows you to access functions outside the IIEF
+//     allows you to access functions outside the IIFE
 
     return {
         getAll: getAll,
