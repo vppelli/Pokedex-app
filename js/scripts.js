@@ -1,22 +1,8 @@
 let pokemonRepository = (function () {
 
-    let pokemonList = [
-        {
-            name: 'Bulbasaur',
-            height: 2.04,
-            type: ['Grass', 'Poison']
-        },
-        {
-            name: 'Charmander',
-            height: 2,
-            type: ['Fire']
-        },
-        {
-            name: 'Squirtle',
-            height: 1.08,
-            type: ['Water']
-        }
-    ];
+    let pokemonList = [];
+
+    let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
 
 //     Gets the pokemonList
 
@@ -49,12 +35,55 @@ let pokemonRepository = (function () {
 
         button.addEventListener('click', function () {
             showDetails(pokemon);
-        })
+        });
+    }
+
+    function loadList() {
+        showLoadingMessage();
+        return fetch(apiUrl).then(function (response) {
+            return response.json();
+        }).then(function (json) {
+            hideLoadingMessage();
+            json.results.forEach(function (item) {
+                let pokemon = {
+                    name: item.name,
+                    detailsUrl: item.url
+                };
+                add(pokemon);
+            });
+        }).catch(function (e) {
+            console.error(e);
+        });
+    }
+
+    function loadDetails (item) {
+        showLoadingMessage();
+        let url = item.detailsUrl;
+        return fetch(url).then(function (response) {
+            return response.json();
+        }).then(function (details) {
+            hideLoadingMessage();
+            item.imageUrl = details.sprites.front_default;
+            item.height = details.height;
+            item.types = details.types;
+        }).catch(function (e) {
+            console.error(e);
+        });
     }
 
     function showDetails(pokemon) {
-        console.log(pokemon);
+        loadDetails(pokemon).then(function () {
+            console.log(pokemon);
+        });
     }
+
+    function showLoadingMessage() {
+        console.log('Loading')
+    };
+
+    function hideLoadingMessage() {
+        console.log('Done')
+    };
 
 //     allows you to access functions outside the IIFE
 
@@ -62,6 +91,8 @@ let pokemonRepository = (function () {
         getAll: getAll,
         add: add,
         addListItem: addListItem,
+        loadList: loadList,
+        loadDetails: loadDetails,
         showDetails: showDetails
     }
 
@@ -69,10 +100,8 @@ let pokemonRepository = (function () {
 
 console.log(pokemonRepository.getAll());
 
-pokemonRepository.add({name: 'Pikachu', height: 1.05, type: ['Eletric'] });
-
-console.log(pokemonRepository.getAll());
-
-pokemonRepository.getAll().forEach(function (pokemon) {
-    pokemonRepository.addListItem(pokemon);
+pokemonRepository.loadList().then(function () {
+    pokemonRepository.getAll().forEach(function (pokemon) {
+        pokemonRepository.addListItem(pokemon);
+    });
 });
