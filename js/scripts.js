@@ -142,9 +142,7 @@ let pokemonRepository = (function () {
     function showDetails(pokemon) {
         loadDetails(pokemon).then(function () {
             showModal(pokemon);
-        }).then(function () {
-            console.log(pokemon);
-        });
+        })
     };
 
 //  Escape and Click of modal to hide pop-up.
@@ -187,8 +185,6 @@ let pokemonRepository = (function () {
     };
 
 })();
-
-console.log(pokemonRepository.getAll());
 
 pokemonRepository.loadList().then(function () {
     pokemonRepository.getAll().forEach(function (pokemon) {
