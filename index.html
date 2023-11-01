@@ -9,19 +9,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./dist/style.mini.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-secondary">
+    <header id="top">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="./img/favicon.ico" width="50" alt="Websites logo">PokeDex</a>
+                <a class="navbar-brand" href="#top"><img src="./img/favicon.ico" width="50" alt="Websites logo">PokeDex</a>
             </div>
         </nav>
     </header>
     <main>
-        <div class="container modal-open" style="margin-top: 100px;">
+        <div class="container modal-open" style="margin-top: 100px;padding-top: 100px;">
             <div class="list-group list-unstyled text-center">
                 <p id="loading">loading ..</p>
             </div>
@@ -42,7 +42,7 @@
     <script src="./js/promise-polyfill.js"></script>
     <script src="./js/fetch-polyfill.js"></script>
 
-    <script src="./js/scripts.js"></script>
+    <script src="./dist/scripts.mini.js"></script>
 </body>
 
 </html>

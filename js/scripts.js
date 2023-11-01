@@ -21,12 +21,13 @@ let pokemonRepository = (function () {
 
         let button = document.createElement('button');
         button.classList.add('list-group-item');
+        button.classList.add('rounded-4');
         button.classList.add('m-1');
         button.classList.add('btn');
-        button.classList.add('btn-secondary');
+        button.classList.add('btn-danger');
         button.classList.add('btn-block');
         button.innerText = pokemon.name;
-        // button.style.backgroundImage = pokemon.imageUrl; Cant get this to work.
+        // button.style.backgroundImage = "url("+item.imageUrl+")";
 
         listItem.appendChild(button);
 
@@ -67,6 +68,7 @@ let pokemonRepository = (function () {
         // Content of modal
         let modalBody = document.createElement('div');
         modalBody.classList.add('modal-body');
+        modalBody.classList.add('bg-primary');
 
         let modalBack = document.createElement('div');
         modalBack.classList.add('mt-2');
@@ -91,7 +93,7 @@ let pokemonRepository = (function () {
         // Adds the image of Pokemon to modal
         let modalImgBack = document.createElement('div');
         modalImgBack.classList.add('border');
-        modalImgBack.classList.add('border-primary');
+        modalImgBack.classList.add('border-danger');
         modalImgBack.classList.add('rounded-4');
 
         let modalImg = document.createElement('img');
