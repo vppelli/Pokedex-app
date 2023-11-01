@@ -1,18 +1,10 @@
-body {
-    font-size: x-large;
-    background-color: #fffffc;
-}
-
-h1 {
-    font-size: 28px;
-}
-
-.pokemon-container {
-    display: grid;
-    grid-template-columns: 1fr;
+.btn-block {
     width: 100%;
-    margin: auto;
-    text-align: center;
+    height: 100px;
+}
+
+.btn-image {
+    background-image: unset;
 }
 
 #loading {
@@ -21,109 +13,4 @@ h1 {
 
 #loading.is-visible {
     display: block;
-}
-
-#modal-container {
-    position: fixed;
-    padding: 20px;
-    box-sizing: border-box;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-
-    z-index: 999;
-    overflow: auto;
-    display: grid;
-    text-align: center;
-}
-
-.modal {
-    margin: auto;
-    margin-top: 10%;
-    display: inline-block;
-    box-sizing: border-box;
-    background: #fff;
-    border-radius: 20px;
-    padding: 15px;
-    width: 100%;
-    max-width: 700px;
-    text-align: left;
-}
-
-.modal-close {
-    float: right;
-    -webkit-appearance: none;
-    cursor: pointer;
-    border: 0;
-    background: none;
-    color: #777;
-    text-decoration: underline;
-}
-
-.modal-inner {
-    margin: auto;
-    display: inline-block;
-    box-sizing: border-box;
-    background: #ffe590;
-    padding: 15px;
-    border-radius: 20px;
-    width: 100%;
-    max-width: 700px;
-}
-
-.modal-box img {
-    width: 100%;
-    background-color: aliceblue;
-    border-radius: 20px;
-    left: 0;
-}
-
-.modal h1 {
-    margin-top: 0px;
-}
-
-.modal p {
-    margin-bottom: 0px;
-}
-
-#modal-container {
-    display: none;
-}
-
-#modal-container.is-visible {
-    display: block;
-}
-
-.pokemon-button {
-    display: inline-block;
-    background-color: rgb(251, 152, 116);
-    font-size: large;
-    border: none;
-    border-radius: 5px;
-    text-align: center;
-    transition-delay: 0.4s;
-    cursor: pointer;
-    width: 100%;
-    height: 50px;
-}
-
-.pokemon-list {
-    list-style-type: none;
-    width: 100%;
-    max-width: 800px;
-    margin: auto;
-    padding-left: 0px;
-}
-
-li {
-    padding: 5px;
-}
-
-@media all and (max-width: 400px) {
-    h1 {
-        margin-right: auto;
-        padding-left: 10px;
-    }
 }
