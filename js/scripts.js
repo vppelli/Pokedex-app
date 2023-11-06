@@ -15,12 +15,12 @@ let pokemonRepository = (function () {
 
 //  The "addListItem" function creates li and button for Pokemon names also creates event on click button
     function addListItem(pokemon) {
-        let pokemonList = document.querySelector('.list-group');
+        let pokemonList = document.querySelector('.row');
 
-        let listItem = document.createElement('li');
+        let listItem = document.createElement('div');
 
         let button = document.createElement('button');
-        button.classList.add('list-group-item', 'rounded-4', 'm-1', 'btn', 'btn-danger', 'btn-block');
+        button.classList.add('col', 'rounded-4', 'm-1', 'btn', 'btn-primary', 'btn-block');
         button.innerText = pokemon.name;
 
         listItem.appendChild(button);
@@ -47,7 +47,7 @@ let pokemonRepository = (function () {
 
         // Title of the modal
         let modalHeader = document.createElement('div');
-        modalHeader.classList.add('modal-header');
+        modalHeader.classList.add('modal-header', 'bg-light');
 
         let modalTitle = document.createElement('h1');
         modalTitle.classList.add('modal-title');
@@ -61,7 +61,7 @@ let pokemonRepository = (function () {
 
         // Content of modal
         let modalBody = document.createElement('div');
-        modalBody.classList.add('modal-body', 'bg-primary');
+        modalBody.classList.add('modal-body', 'bg-primary', 'rounded-bottom-2');
 
         let modalBack = document.createElement('div');
         modalBack.classList.add('mt-2', 'p-2', 'rounded-4', 'bg-secondary', 'text-white', 'text-center');

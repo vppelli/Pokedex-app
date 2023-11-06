@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M512 0L512 0L512 512L0 512L0 0L512 0Z" id="path_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" clip-rule="evenodd" fill-rule="evenodd" />
+    </clipPath>
+  </defs>
+  <g id="poke-button" clip-path="url(#clip_1)">
+    <path d="M512 0L512 0L512 512L0 512L0 0L512 0Z" id="poke-button" fill="#FFFFFF" stroke="none" />
+    <path d="M0 0L75 0L75 512L0 512L0 0Z" id="white-ball" fill="#DB0000" fill-rule="evenodd" stroke="none" />
+    <path d="M75 0L86 0L86 512L75 512L75 0Z" id="outline" fill="#000000" fill-rule="evenodd" stroke="none" />
+    <path d="M52 256.5C52 240.76 64.7599 228 80.5 228C96.2401 228 109 240.76 109 256.5C109 272.24 96.2401 285 80.5 285C64.7599 285 52 272.24 52 256.5Z" id="button-outline" fill="#000000" fill-rule="evenodd" stroke="none" />
+    <path d="M57 256.5C57 243.521 67.5213 233 80.5 233C93.4787 233 104 243.521 104 256.5C104 269.479 93.4787 280 80.5 280C67.5213 280 57 269.479 57 256.5Z" id="button" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
+  </g>
+</svg>
