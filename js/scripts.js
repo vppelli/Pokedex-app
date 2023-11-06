@@ -20,9 +20,8 @@ let pokemonRepository = (function () {
         let listItem = document.createElement('li');
 
         let button = document.createElement('button');
-        button.classList.add['list-group-item', 'rounded-4', 'm-1', 'btn', 'btn-danger', 'btn-block'];
+        button.classList.add('list-group-item', 'rounded-4', 'm-1', 'btn', 'btn-danger', 'btn-block');
         button.innerText = pokemon.name;
-        // button.style.backgroundImage = "url("+item.imageUrl+")";
 
         listItem.appendChild(button);
 
@@ -62,10 +61,10 @@ let pokemonRepository = (function () {
 
         // Content of modal
         let modalBody = document.createElement('div');
-        modalBody.classList.add['modal-body', 'bg-primary'];
+        modalBody.classList.add('modal-body', 'bg-primary');
 
         let modalBack = document.createElement('div');
-        modalBack.classList.add['mt-2', 'p-2', 'rounded-4', 'bg-secondary', 'text-white', 'text-center'];
+        modalBack.classList.add('mt-2', 'p-2', 'rounded-4', 'bg-secondary', 'text-white', 'text-center');
 
         let modalWeight = document.createElement('p');
         modalWeight.innerText = 'Weight: ' + pokemon.weight;
@@ -81,7 +80,7 @@ let pokemonRepository = (function () {
 
         // Adds the image of Pokemon to modal
         let modalImgBack = document.createElement('div');
-        modalImgBack.classList.add['border', 'border-danger', 'rounded-4'];
+        modalImgBack.classList.add('border', 'border-danger', 'rounded-4');
 
         let modalImg = document.createElement('img');
         modalImg.classList.add('img-thumbnail');
