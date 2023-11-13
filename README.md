@@ -8,10 +8,13 @@ Also presents a image of current Pokemon in view.
 ## Setup the project
 - Simple html file startup.
 - Git Clone: [Here](https://github.com/vppelli/Pokedex-app.git)
-- Open the index.html to access 150 Pokemon [Too change limit](https://github.com/vppelli/Pokedex-app/blob/main/README.md#too-change-limit)
+- Open the index.html to access 150 Pokemon [Changing the limit](https://github.com/vppelli/Pokedex-app/blob/main/README.md#too-change-limit)
 
-### Too change Limit
-Go into [here](./dist/scripts.mini.js)
+- You can also download the files manually, and open the index.html to preview the Pokedex-app
+- Changing up css or javascript, the index.html is refrencing to .mini files located in __dist__ folder [here](./dist)
+
+### How to change Limit
+Go into dist folder [here](./dist/scripts.mini.js)
 Open up the scripts.mini.js if you havent already, and find the API fetch link. Changing the end limit number will show more or less.
 Example: https://pokeapi.co/api/v2/pokemon/?limit=1000 <-- showing 1000 Pokemon
 
