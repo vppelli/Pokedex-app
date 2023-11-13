@@ -6,7 +6,13 @@ Pokedex-app presents a list of Pokemons, users can open each Pokemon to view sta
 Also presents a image of current Pokemon in view.
 
 ## Setup the project
-- Download the files manually or Git Clone: [Here](https://github.com/vppelli/Pokedex-app.git)
+- Simple html file startup.
+- Git Clone: [Here](https://github.com/vppelli/Pokedex-app.git)
+- Open the index.html to access 150 Pokemon [Too change limit](###)
+### Too change Limit
+Go into **dist**/scripts.mini.js
+Open up the scripts.mini.js find the API fetch link and change the endings limit to your chosing
+Example: https://pokeapi.co/api/v2/pokemon/?limit=**1000**
 
 ## Used
 - HTML
