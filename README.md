@@ -11,9 +11,9 @@ Also presents a image of current Pokemon in view.
 - Open the index.html to access 150 Pokemon [Too change limit](https://github.com/vppelli/Pokedex-app/blob/main/README.md#too-change-limit)
 
 ### Too change Limit
-Go into ./dist/scripts.mini.js
-Open up the scripts.mini.js find the API fetch link and change the endings limit to your chosing
-Example: https://pokeapi.co/api/v2/pokemon/?limit=**1000**
+Go into [here](./dist/scripts.mini.js)
+Open up the scripts.mini.js if you havent already, and find the API fetch link. Changing the end limit number will show more or less.
+Example: https://pokeapi.co/api/v2/pokemon/?limit=1000 <-- showing 1000 Pokemon
 
 ## Used
 - HTML
