@@ -1,16 +1,55 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <path d="M512 0L512 0L512 512L0 512L0 0L512 0Z" id="path_1" />
-    <clipPath id="clip_1">
-      <use xlink:href="#path_1" clip-rule="evenodd" fill-rule="evenodd" />
-    </clipPath>
-  </defs>
-  <g id="poke-button" clip-path="url(#clip_1)">
-    <path d="M512 0L512 0L512 512L0 512L0 0L512 0Z" id="poke-button" fill="#DB0000" stroke="none" />
-    <path d="M0 0L75 0L75 512L0 512L0 0Z" id="white-ball" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
-    <path d="M75 0L86 0L86 512L75 512L75 0Z" id="outline" fill="#000000" fill-rule="evenodd" stroke="none" />
-    <path d="M52 256.5C52 240.76 64.7599 228 80.5 228C96.2401 228 109 240.76 109 256.5C109 272.24 96.2401 285 80.5 285C64.7599 285 52 272.24 52 256.5Z" id="button-outline" fill="#000000" fill-rule="evenodd" stroke="none" />
-    <path d="M57 256.5C57 243.521 67.5213 233 80.5 233C93.4787 233 104 243.521 104 256.5C104 269.479 93.4787 280 80.5 280C67.5213 280 57 269.479 57 256.5Z" id="button" class='ball-blink' fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
-  </g>
+<svg width="420" height="100" viewBox="0 0 420 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_47_17)">
+<rect width="420" height="100" fill="white"/>
+<path d="M0 -2H101V102H0V-2Z" fill="#333333"/>
+<path d="M113 -2H420V102H113V-2Z" fill="#FF0000"/>
+<g filter="url(#filter0_dd_47_17)">
+<path d="M101 -2H113V102H101V-2Z" fill="black"/>
+</g>
+<g filter="url(#filter1_di_47_17)">
+<circle cx="107" cy="50" r="15" fill="white"/>
+<circle cx="107" cy="50" r="19" stroke="black" stroke-width="8"/>
+</g>
+<circle cx="107" cy="50" r="13" fill="white"/>
+<circle cx="107" cy="50" r="12.5" stroke="black" stroke-opacity="0.18"/>
+</g>
+<defs>
+<filter id="filter0_dd_47_17" x="92" y="-10" width="31" height="120" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="-1"/>
+<feGaussianBlur stdDeviation="4"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_47_17"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="2"/>
+<feGaussianBlur stdDeviation="4"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+<feBlend mode="normal" in2="effect1_dropShadow_47_17" result="effect2_dropShadow_47_17"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_47_17" result="shape"/>
+</filter>
+<filter id="filter1_di_47_17" x="70" y="13" width="74" height="74" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="6" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_47_17"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="4"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_47_17"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_47_17" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="8" operator="erode" in="SourceAlpha" result="effect2_innerShadow_47_17"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="3"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.82 0"/>
+<feBlend mode="normal" in2="shape" result="effect2_innerShadow_47_17"/>
+</filter>
+<clipPath id="clip0_47_17">
+<rect width="420" height="100" fill="white"/>
+</clipPath>
+</defs>
 </svg>

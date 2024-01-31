@@ -20,7 +20,7 @@ let pokemonRepository = (function () {
         let listItem = document.createElement('div');
 
         let button = document.createElement('button');
-        button.classList.add('col', 'rounded-4', 'm-1', 'btn', 'btn-primary', 'btn-block');
+        button.classList.add('col', 'btn', 'btn3d', 'm-2', 'btn-block', 'btn-default', 'caps');
         button.innerText = pokemon.name;
 
         listItem.appendChild(button);
@@ -43,61 +43,59 @@ let pokemonRepository = (function () {
         let modalDialog = document.createElement('div');
         modalDialog.classList.add('modal-dialog');
         let modalContent = document.createElement('div');
-        modalContent.classList.add('modal-content');
-
-        // Title of the modal
-        let modalHeader = document.createElement('div');
-        modalHeader.classList.add('modal-header', 'bg-light');
-
-        let modalTitle = document.createElement('h1');
-        modalTitle.classList.add('modal-title');
-        modalTitle.innerText = pokemon.name;
+        modalContent.classList.add('modal-content', 'bg-blur');
 
         // Creates a button with class name close-modal
         let closeButtonModal = document.createElement('button');
-        closeButtonModal.classList.add('btn');
-        closeButtonModal.innerText = 'X';
+        closeButtonModal.classList.add('btn', 'btn3d', 'btn-close', 'close-size', 'bold', 'col-2');
         closeButtonModal.addEventListener('click', hideModal);
 
         // Content of modal
         let modalBody = document.createElement('div');
-        modalBody.classList.add('modal-body', 'bg-primary', 'rounded-bottom-2');
+        modalBody.classList.add('modal-body', 'pop-look');
 
-        let modalBack = document.createElement('div');
-        modalBack.classList.add('mt-2', 'p-2', 'rounded-4', 'bg-secondary', 'text-white', 'text-center');
+        let titleBackground = document.createElement('div');
+        titleBackground.classList.add('p-2', 'pop-look', 'text-white', 'text-center', 'd-flex', 'bg-dark');
 
-        let modalWeight = document.createElement('p');
-        modalWeight.innerText = 'Weight: ' + pokemon.weight;
+        let infoBackground = document.createElement('div');
+        infoBackground.classList.add('mt-3', 'p-2', 'pop-look', 'bg-dark', 'text-white', 'text-center');
 
-        let modalHeight = document.createElement('p');
-        modalHeight.innerText = 'Height: ' + pokemon.height;
+        let title = document.createElement('h1');
+        title.classList.add('col', 'm-auto', 'caps');
+        title.innerText = pokemon.name;
 
-        let modalType = document.createElement('p');
-        modalType.innerText = 'Types: ' + pokemon.types;
+        let weight = document.createElement('p');
+        weight.innerText = 'Weight: ' + pokemon.weight;
 
-        let modalAbility = document.createElement('p');
-        modalAbility.innerText = 'Abilities: ' + pokemon.ability;
+        let height = document.createElement('p');
+        height.innerText = 'Height: ' + pokemon.height;
+
+        let type = document.createElement('p');
+        type.innerText = 'Types: ' + pokemon.types;
+
+        let ability = document.createElement('p');
+        ability.innerText = 'Abilities: ' + pokemon.ability;
 
         // Adds the image of Pokemon to modal
-        let modalImgBack = document.createElement('div');
-        modalImgBack.classList.add('border', 'border-danger', 'rounded-4');
+        let imgBackground = document.createElement('div');
+        imgBackground.classList.add('pop-look', 'mt-3', 'bg-dark');
 
-        let modalImg = document.createElement('img');
-        modalImg.classList.add('img-thumbnail');
-        modalImg.src = pokemon.imageUrl;
-        modalImg.alt = 'Image of ' + pokemon.name;
+        let img = document.createElement('img');
+        img.classList.add('img-thumbnail');
+        img.src = pokemon.imageUrl;
+        img.alt = 'Image of ' + pokemon.name;
 
         // appends all Childs to Parent - Also appended in order
-        modalImgBack.appendChild(modalImg);
-        modalBody.appendChild(modalImgBack);
-        modalBack.appendChild(modalHeight);
-        modalBack.appendChild(modalWeight);
-        modalBack.appendChild(modalType);
-        modalBack.appendChild(modalAbility);
-        modalBody.appendChild(modalBack);
-        modalHeader.appendChild(modalTitle);
-        modalHeader.appendChild(closeButtonModal);
-        modalContent.appendChild(modalHeader);
+        titleBackground.appendChild(title);
+        titleBackground.appendChild(closeButtonModal);
+        modalBody.appendChild(titleBackground);
+        imgBackground.appendChild(img);
+        modalBody.appendChild(imgBackground);
+        infoBackground.appendChild(height);
+        infoBackground.appendChild(weight);
+        infoBackground.appendChild(type);
+        infoBackground.appendChild(ability);
+        modalBody.appendChild(infoBackground);
         modalContent.appendChild(modalBody);
         modalDialog.appendChild(modalContent);
         modalContainer.appendChild(modalDialog);
