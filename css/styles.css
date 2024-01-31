@@ -1,7 +1,27 @@
 body {
-    background-image: linear-gradient(rgb(199, 199, 199),rgb(116, 0, 0));
+    background-image: url(../img/classic-park.webp), linear-gradient(rgb(199, 199, 199), rgb(116, 0, 0));
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    max-width: 1480px;
+    margin: auto;
+}
+
+.bg-dark {
+    background-color: #363636;
+}
+
+.fade,
+.bg-blur {
+    background-color: #36363633;
+    backdrop-filter: blur(10px);
+}
+
+.btn {
+    border-radius: 10px;
 }
 
 .btn-block {
@@ -9,28 +29,8 @@ body {
     height: 100px;
 }
 
-.bg-primary {
-    background-image: linear-gradient(#343434,red);
-}
-
 .bg-light {
     background-color: rgb(199, 199, 199);
-}
-
-.btn-primary {
-    color: black;
-    background-image: url('../img/poke-button-hover.svg');
-    background-size: cover;
-    background-position: center;
-    border-color: aliceblue;
-}
-
-.btn-primary:hover {
-    background-image: url('../img/poke-button.svg');
-    background-color: none;
-    background-size: cover;
-    background-position: center;
-    border-color: rgb(255, 0, 0);
 }
 
 #loading {
@@ -39,4 +39,104 @@ body {
 
 #loading.is-visible {
     display: block;
+}
+
+.btn3d {
+    position: relative;
+    top: -6px;
+    border: 0;
+    transition: all 40ms linear;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.btn3d:active:focus,
+.btn3d:focus:hover,
+.btn3d:focus {
+    -moz-outline-style: none;
+    outline: medium none;
+}
+
+.btn3d:active,
+.btn3d.active {
+    top: 2px;
+}
+
+.btn3d.btn-default {
+    color: #ffffff;
+    box-shadow: 0 0 0 1px #ae8484 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #0B0B0B, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+    background: url(/img/poke-button.svg);
+    background-size: cover;
+}
+
+.btn3d.btn-default:hover {
+    color: #ffffff;
+    box-shadow: 0 0 0 1px #ff000025 inset, 0 0 0 2px rgba(17, 17, 17, 0.1) inset, 0 8px 0 0 #0B0B0B, 0 8px 8px 1px rgba(0, 0, 0, .2);
+    background: url(/img/poke-button-hover.svg);
+}
+
+.btn3d.btn-default:active,
+.btn3d.btn-default.active {
+    color: #ff0000;
+    box-shadow: 0 0 0 1px #ebebeb20 inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 1px 3px 1px rgba(0, 0, 0, .1);
+    background-color: #ff0000;
+}
+
+.close-size {
+    width: 38px;
+    height: 40px;
+}
+
+.btn3d.btn-close {
+    color: #ffffff;
+    box-shadow: 0 0 0 1px #d3d0d02b inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #0B0B0B, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+    background-color: rgb(107, 6, 6);
+}
+
+.btn3d.btn-close:hover {
+    color: #ffffff;
+    box-shadow: 0 0 0 1px #d3d0d02b inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #0B0B0B, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+    background-color: rgb(188, 8, 8);
+}
+
+.btn3d.btn-close:active,
+.btn3d.btn-close.active {
+    color: #ff0000;
+    box-shadow: 0 0 0 1px #ebebeb20 inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 1px 3px 1px rgba(0, 0, 0, .1);
+    background-color: #ff0000;
+}
+
+.pop-look {
+    border-radius: 10px;
+    box-shadow:  0 0 0 1px #e1e1e11f inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #0B0B0B, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+}
+
+.text-red {
+    color: #ff0000;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.title {
+    margin: auto;
+}
+
+.caps {
+    text-transform: capitalize;
+}
+
+.alert {
+    position: fixed;
+    top: 80px;
+    left: 0%;
+    right: 0%;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background-color: #363636;
+    margin: auto;
 }

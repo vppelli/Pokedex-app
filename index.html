@@ -14,16 +14,19 @@
 
 <body>
     <header id="top">
-        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#top"><img src="./img/favicon.ico" width="50" alt="Websites logo">PokeDex</a>
+        <nav class="navbar fixed-top bg-dark pop-look">
+            <div class="container-fluid">
+                <a href="#top"><img src="./img/favicon.ico" width="50" alt="Websites logo"></a>
+                <div class="title">
+                    <span class="bold text-light">POKE</span><span class="bold text-red">DEX</span>
+                </div>
             </div>
         </nav>
     </header>
     <main>
+        <div id="loading" class="alert pop-look text-light">loading ..</div>
         <div class="container modal-open" style="margin-top: 100px;padding-top: 100px;">
             <div class="row row-cols-md-2 row-cols-xl-3 text-center">
-                <div id="loading" class="col-12 fs-3">loading ..</div>
             </div>
         </div>
         <div id="modal" class="modal fade" tabindex="-1" role="dialog">
