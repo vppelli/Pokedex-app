@@ -14,7 +14,7 @@ To build a small web application with HTML, CSS, and JavaScript that loads data 
 - [API](#api-used)
 
 # [Pokedex App](https://vppelli.github.io/Pokedex-app/) Live
-[![Gif](img/Pokedex-desktop.gif)](https://vppelli.github.io/Pokedex-app/) [![Gif](img/Pokedex-mobile.gif)](https://vppelli.github.io/Pokedex-app/) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [![Gif](img/Pokedex-tablet.gif)](https://vppelli.github.io/Pokedex-app/)
+[![Gif](img/Pokedex-desktop.gif)](https://vppelli.github.io/Pokedex-app/) [![Gif](img/Pokedex-mobile.gif)](https://vppelli.github.io/Pokedex-app/) [![Gif](img/Pokedex-tablet.gif)](https://vppelli.github.io/Pokedex-app/)
 
 ## Future Features
 - The app should handle errors (such as trying to load data while offline) and show user-friendly error messages.
