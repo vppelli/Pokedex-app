@@ -1,5 +1,5 @@
 [![PokeDex](https://github.com/vppelli/Vppelli/blob/main/img/POKEDEX.png)](https://vppelli.github.io/Pokedex-app/)
-# Discription
+# Description
 Pokedex App is a simple JavaScript app using the PokeAPI to displayed information about selected Pokemon.
 Pokedex App presents a list of Pokemons, users can open each Pokemon to view stats "Height, Weight, Type, and Abilities".
 Also presents a image of current Pokemon in view.
