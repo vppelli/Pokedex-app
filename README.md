@@ -1,11 +1,12 @@
-[![PokeDex](https://github.com/vppelli/Vppelli/blob/main/img/POKEDEX.png)](https://vppelli.github.io/Pokedex-app/)
+[<picture><source media="(prefers-color-scheme: dark)" srcset="https://github.com/vppelli/Vppelli/blob/main/img/POKEDEX.png"><source media="(prefers-color-scheme: light)" srcset="https://github.com/vppelli/Vppelli/blob/main/img/LPOKEDEX.png"><img alt="Pokedex link" src="https://github.com/vppelli/Vppelli/blob/main/img/POKEDEX.png">
+</picture>](https://vppelli.github.io/Pokedex-app/)
 # Description
-Pokedex App is a simple JavaScript app using the PokeAPI to displayed information about selected Pokemon.
+Pokedex App is a simple JavaScript app using the PokeAPI to display information about selected Pokemon.
 Pokedex App presents a list of Pokemons, users can open each Pokemon to view stats "Height, Weight, Type, and Abilities".
-Also presents a image of current Pokemon in view.
+It also presents an image of the current Pokemon in view.
 
 ## Objective
-To build a small web application with HTML, CSS, and JavaScript that loads data from an external API and enables the viewing of data points in detail.
+To build a small web application with HTML, CSS, and JavaScript that loads data from an external API and enables detailed viewing of data points.
 
 ## Table of Content
 - [Project Setup](#setup)
@@ -25,17 +26,17 @@ To build a small web application with HTML, CSS, and JavaScript that loads data 
 
  
 ## Setup
-> A simple html file startup project!
+> A simple HTML file startup project!
 - Clone the project: [Here](https://github.com/vppelli/Pokedex-app.git)
-- Once you cloned it, use the index.html to preview the Pokedex App
+- Once you have cloned it, use the index.html to preview the Pokedex App
 - Inside the index.html; to access All Pokemon by [Changing the limit](https://github.com/vppelli/Pokedex-app/blob/main/README.md#too-change-limit)
 
 - You can also download the files manually, and open the index.html to preview the Pokedex App
-- Changing up css or javascript, the index.html is refrencing to .mini files located in __dist__ folder [here](./dist)
+- Changing up CSS or javascript, the index.html is referencing to .mini files located in __dist__ folder [here](./dist)
 
 ### Changing the limit
-Go into dist folder [here](./dist/scripts.mini.js)
-Open up the scripts.mini.js if you havent already, and find the API fetch link. Changing the end limit number will show more or less.
+Go into the dist folder [here](./dist/scripts.mini.js)
+Open up the scripts.mini.js if you haven't already, and find the API fetch link. Changing the end limit number will show more or less.
 Example: https://pokeapi.co/api/v2/pokemon/?limit=1000 <-- showing 1000 Pokemon
 
 ## Used
